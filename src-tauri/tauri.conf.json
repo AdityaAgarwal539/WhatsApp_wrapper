@@ -1,0 +1,39 @@
+{
+  "productName": "WhatsApp",
+  "version": "1.0.0",
+  "identifier": "com.whatsapp.wrapper",
+  "bundle": {
+	  "active":true,
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "targets": ["deb","rpm"]
+  },
+  "app": {
+    "trayIcon": {
+      "iconPath": "icons/128x128.png",
+      "iconAsTemplate": false,
+      "menuOnLeftClick": false
+    },
+    "windows": [
+      {
+        "title": "WhatsApp",
+        "width": 1000,
+        "height": 750,
+        "resizable": true,
+        "fullscreen": false,
+        "visible": true,
+        "url": "https://web.whatsapp.com",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  }
+}
+
