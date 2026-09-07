@@ -3,9 +3,16 @@
   "identifier": "default",
   "description": "Capability for the main window",
   "windows": ["main"],
+  "remote": {
+    "urls": [
+      "https://web.whatsapp.com/*"
+    ]
+  },
   "permissions": [
     "core:default",
     "opener:default",
+    "dialog:default",
     "notification:default"
   ]
- }
+}
+
